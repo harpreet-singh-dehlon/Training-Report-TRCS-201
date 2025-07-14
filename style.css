@@ -1,0 +1,237 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background: linear-gradient(to left, grey, lightblue);
+}
+
+section {
+  padding: 100px 50px;
+}
+
+/* === Header & Navigation === */
+header {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+nav {
+  margin: 20px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+/* === Profile Photo === */
+.photo {
+  display: block;
+  width: 150px;
+  height: auto;
+  margin: 0 auto 20px auto;
+  object-fit: cover;
+  border: 3px solid #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* === Section Content === */
+.section-content {
+  text-align: justify;
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+/* === Title Styling === */
+.title {
+  text-align: center;
+  font-size: 2.2em;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 1.2em;
+  color: #444;
+}
+
+/* === Project Cards === */
+#projects {
+  background-color: grey;
+}
+
+.project {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  background: #fff;
+}
+
+.project .project-title {
+  margin: 0 0 10px;
+  font-size: 1.2em;
+}
+
+.project .project-desc {
+  margin: 0;
+}
+
+/* === Map Embed === */
+iframe.map {
+  border: 0;
+  width: 80%;
+  height: 400px;
+  display: block;
+  margin: 20px auto;
+}
+
+/* === Form Styling === */
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="date"],
+form input[type="file"],
+form input[type="password"],
+form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+form textarea {
+  resize: vertical;
+}
+
+form input[type="submit"],
+form input[type="reset"] {
+  margin-top: 20px;
+  width: 48%;
+  padding: 10px;
+  background-color: #222;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover,
+form input[type="reset"]:hover {
+  background-color: #444;
+}
+
+/* === Footer === */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #222;
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Popup Message */
+.popup {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 2px solid #1D1B49;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.popup.active {
+  display: block;
+}
+
+.popup button {
+  background-color: #1D1B49;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.popup button:hover {
+  background-color: #333;
+}
+
+
+/* === Responsive Tweaks === */
+@media (max-width: 768px) {
+  section {
+    padding: 60px 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .photo {
+    width: 150px;
+    height: 120px;
+  }
+
+  form {
+    width: 90%;
+  }
+
+  iframe.map {
+    width: 95%;
+  }
+}

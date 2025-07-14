@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head<link rel="stylesheet" href="style.css">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | Harpreet Singh</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Harpreet Singh</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="location.html">Location</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="section" id="form">
+
+
+  <form>
+    <fieldset>
+      <legend>Contact Us</legend>
+  
+      <label for="first-name">First Name</label>
+      <input type="text" id="first-name" name="first_name" placeholder="Enter your first name" required>
+
+      <label for="m-name">Mother's Name</label>
+      <input type="text" id="m-name" name="mother_name" placeholder="Enter your mother's name" required>
+
+      <label for="father-name">Father's Name</label>
+      <input type="text" id="father-name" name="father_name" placeholder="Enter your father's name" required>
+
+      <label for="phone-number">Phone Number</label>
+      <input type="number" id="phone-number" name="phone_number" placeholder="Enter your phone number" required>
+
+      <label for="email">Email ID</label>
+      <input type="text" id="email" name="email" placeholder="Enter your Email ID" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+      <label for="birth-date">Birth Date</label>
+      <input type="date" id="birth-date" name="birth_date" required>
+
+      <label for="profile-picture">Profile Picture</label>
+      <input type="file" id="profile-picture" name="profile_picture" required>
+
+      <label>Gender:</label>
+      <label><input type="radio" name="gender" value="male" required> Male</label>
+      <label><input type="radio" name="gender" value="female" required> Female</label>    
+
+      <label>Hobbies:</label>
+      <label><input type="checkbox" name="hobbies" value="Portrait Drawing"> Portrait Drawing</label>
+      <label><input type="checkbox" name="hobbies" value="Painting"> Painting</label>    
+      <label><input type="checkbox" name="hobbies" value="Movies"> Watching Movies</label>
+      <label><input type="checkbox" name="hobbies" value="Reading"> Reading Spiritual Books</label>  
+
+      <label for="comments">Comments:</label>
+      <textarea id="comments" name="comments" rows="5" column="5"  required></textarea><br>
+
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+
+    </fieldset>
+  </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Harpreet Singh. All rights reserved.</p>
+  </footer>
+<script>
+  // Wait for the DOM to load
+  document.addEventListener('DOMContentLoaded', function () {
+    const form = document.querySelector('form');
+
+    form.addEventListener('submit', function (event) {
+      event.preventDefault(); // prevent page refresh
+
+      // You can add form validation or sending logic here
+
+      // Show popup
+      alert("✅ Data is saved successfully!");
+    });
+  });
+</script>
+
+</body>
+</html>
